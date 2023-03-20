@@ -73,6 +73,15 @@ collections:
     output: true
     permalink: /:collection/:name
 
+asciidoc: {}
+asciidoctor:
+  base_dir: :docdir
+  safe: unsafe
+  attributes:
+    - idseparator=_
+    - source-highlighter=coderay
+    - icons=font
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
