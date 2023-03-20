@@ -9,10 +9,10 @@ source "https://rubygems.org"
 # Happy Jekylling!
 
 #uncomment if not using ***
-#gem "jekyll", "~> 4.3.2"
+gem "jekyll", "~> 4.3.2"
 
 #code for ***
-gem 'jekyll', '~> 3.8.5'
+# gem 'jekyll', '~> 3.8.5'
 gem 'coderay', '~> 1.1.0'
 
 group :jekyll_plugins do
