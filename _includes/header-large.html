@@ -1,0 +1,17 @@
+<header class="header-large">
+  <div class="header-large-container">
+  <h1>
+    <a href="/" class="home-link">
+      {{ site.title }}
+    </a>
+  </h1>
+  </div>
+  <div class="header-large-container">
+  <a href="/" class="home-link">
+    <img src="{{ site.baseurl }}{{ site.icon }}" alt="{{ site.icon_alt }}">
+  </a>
+  </div>
+  <div class="header-large-container">
+  {% include navigation.html %}
+  </div>
+</header>

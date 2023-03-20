@@ -1,0 +1,25 @@
+<header class="header-small">
+  <div class="header-small-container">
+  <a href="/" class="home-link">
+    <img src="{{ site.baseurl }}{{ site.icon }}" alt="{{ site.icon_alt }}">
+  </a>
+  <a href="/" class="home-link">
+    <h1>{{ site.title }}</h1>
+  </a>
+  </div>
+  
+  <input id="toggle" type="checkbox"></input>
+
+  <label for="toggle" class="hamburger">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </label>
+
+
+  <div class="nav">
+    <div class="nav-wrapper">
+      {% include navigation.html %}
+    </div>
+  </div>
+</header>

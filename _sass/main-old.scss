@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	background-color: #B0B0C0;
+}
+
+
+.top {
+	display: flex;
+	margin: 20px 0px 25px 0px;
+}
+
+
+.sidebar {
+	
+	flex: 1;
+	display: inline;
+	float: left;
+	clear: none;
+	height: 100%;
+	width: 500px;
+	max-width: 33%;
+	margin: 0px 10px 0px 10px;
+	padding: 25px;
+	border: 5px solid #000000;
+	border-radius: 50px;
+	background-color: #202030;
+	color: #FFFFFF;
+	text-align: center;
+	
+	h1 {
+		margin: 20px;
+		font-weight: bold;
+	}
+	
+	img {
+		width: 250px;
+		max-width: 100%;
+		object-fit: scale-down;
+		border: 2px solid #000000;
+		border-radius: 40%;
+		margin: 20px;
+	}
+	
+	a {
+		text-decoration: none;
+		color: #FFFFFF;
+	}
+	a:visited {
+		text-decoration: none;
+	}
+	a:hover {
+		text-decoration: none;
+	}
+	a:active {
+		text-decoration: none;
+		color: #B0C0D0;
+	}
+	
+}
+	
+
+.content {
+	
+	flex: 3;
+	height: fill;
+	margin: 0px 10px 0px 10px;
+	
+	p {
+		text-indent: 0em;
+		text-align: left;
+		line-height: 1.8;
+	}
+	
+	h1 {
+		text-align: center;
+	}
+}
+
+
+.page {
+	
+	margin: 20px 0px 20px 0px;
+	padding: 25px;
+	background-color: #FFFFFF;
+	color: black;
+	border: 2px solid #000000;
+	border-radius: 10px;
+	
+	h1 {
+		text-align: center;
+	}
+	
+}
+
+
+#post {
+	
+	margin: 20px 0px 20px 0px;
+	padding: 25px;
+	background-color: #FFFFFF;
+	color: black;
+	border: 2px solid #000000;
+	border-radius: 10px;
+	
+	h1 {
+		text-align: center;
+	}
+}
+
+
+.post {
+	
+	margin: 20px 0px 20px 0px;
+	padding: 25px;
+	background-color: #FFFFFF;
+	color: black;
+	border: 2px solid #000000;
+	border-radius: 10px;
+	
+	p {
+		text-indent: 0em;
+		text-align: left;
+		line-height: 1.8;
+	}
+	
+	h2 {
+		text-align: left;
+	}
+}
+
+
+.entry {
+	
+}
+
+
+.date {
+	text-align: left;
+}
+
+
+.footer {
+	
+	clear: both;
+	text-align: center;
+	margin: 25px;
+	
+}
+
+
+.notfound {
+	margin: 10px auto;
+	max-width: 600px;
+	text-align: center;
+	h1 {
+		margin: 30px 0;
+		font-size: 4em;
+		line-height: 1;
+		letter-spacing: -1px;
+	}
+}
+
+nav {
+	
+	margin: 20px;
+	font-weight: bold;
+	font-size: 1.5em;
+	
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+	
+	li {
+		a {
+			display: block;
+			color: white;
+			border-radius: 3px;
+			padding: 10px;
+		}
+		a:visited {
+		}
+		a:hover {
+			background-color: #FFFFFF;
+			color: #000000;
+		}
+		a:active {
+		}
+	}
+	.current {
+		background-color: #696979;
+	}
+}

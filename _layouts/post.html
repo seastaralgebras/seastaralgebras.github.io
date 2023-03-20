@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<article id="post">
+	<h1>{{ page.title }}</h1>
+	<hr>
+	<div class="date">Date:&nbsp;&nbsp;{{ page.date | date: "%B %e, %Y" }}</div>
+	<hr>
+	<div class="entry">{{ content }}</div>
+	<hr>
+	<div class="tags">
+		Tags:&nbsp;
+		{% for tag in page.tags %}
+			<a href="/tags/{{tag}}">#{{tag}}</a>{% if forloop.last %}&nbsp;{% else %},&nbsp;{% endif %}
+		{% endfor %}
+	</div>
+</article>
