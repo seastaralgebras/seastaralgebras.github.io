@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-permalink: /about
+permalink: /about.html
 ---
 
 <img src="/assets/images/missionpeak.jpg" alt="Karuna wearing a Rutgers Math sweatshirt while standing next to a Christmas tree at the top of Mission Peak in Fremont, CA." width="250">

@@ -2,7 +2,7 @@
 layout: page
 title: CV
 
-permalink: /cv
+permalink: /cv.html
 ---
 
 Insert CV here.
