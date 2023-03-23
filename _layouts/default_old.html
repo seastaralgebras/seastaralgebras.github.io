@@ -11,10 +11,13 @@
 		</script>
 	</head>
 	<body>
-    {% include header.html %}
-    <div class="content">
-      {{ content }}
+		<div class="container">
+	  	{% include header-small.html %}
+	  	{% include header-large.html %}
+	  	<div class="content">
+        {{ content }}
+      </div>
     </div>
-    {% include footer.html %}
+    {% include footer_old.html %}
 	</body>
 </html>

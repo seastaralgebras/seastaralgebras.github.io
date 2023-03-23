@@ -1,0 +1,22 @@
+:root {
+  --page-bg-color: #B0B0C0;
+  --header-bg-color: #202030;
+  --header-text-color: #FFFFFF;
+  --header-border-color: #000000;
+  --ham-color: #FFFFFF;
+  --nav-color: #FFFFFF;
+  --nav-color-hover: #000000;
+  --nav-bg-color: rgba(32,32,48,0.9);
+  --nav-bg-color-hover: rgba(255,255,255,0.9);
+  --text-color: #FFFFFF;
+  --header-active-link-color: #B0C0D0;
+  --current-page-color: #696979;
+  
+  --content-header-color: var(--header-bg-color);
+  
+  --footer-color: var(--header-bg-color);
+  --contact-icon-invert: 100%;
+  --contact-icon-brightness: 20%;
+  --contact-icon-invert-hover: 100%;
+  --contact-icon-brightness-hover: 100%;
+}

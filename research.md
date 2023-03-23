@@ -12,5 +12,4 @@ Recently, I have been thinking about knot theory, 3- and 4-manifolds, and Heegar
 
 My previous research includes work on integer generalized splines, analysis on fractals, and geometric group theory.
 
-
-
+{% bibliography --file publications %}

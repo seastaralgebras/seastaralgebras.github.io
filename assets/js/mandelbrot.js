@@ -1,12 +1,6 @@
-// stuff
-
 var math = require('mathjs');
 
-/*
-var c;
-var z;
-var x;
-*/
+
 
 function modulus(z) {
     return math.multiply(z, math.conj(z));
@@ -47,18 +41,11 @@ function dec_to_hex(x) {
     }
 }
 
+
 function to_color(t) {
-    let r = math.floor(math.multiply(t, 0));
-    let g = math.floor(math.multiply(t, 160));
-    let b = math.floor(math.multiply(t, 255));
-    return [r, g, b, 255];
-}
-
-
-function to_color_string(t) {
-    let r = math.multiply(t, 0);
-    let g = math.multiply(t, 160);
-    let b = math.multiply(t, 255);
+    let r = math.multiply(t, 255);
+    let g = math.multiply(t, 96);
+    let b = math.multiply(t, 126);
     let r_hex = dec_to_hex(r);
     let g_hex = dec_to_hex(g);
     let b_hex = dec_to_hex(b);
@@ -93,7 +80,7 @@ function julia_set(width_px, c, max_iterations) {
         let row = [];
         for (i = 0; i < width_px; i++) {
             point = square[j][i];
-            row[i] = to_color_string(div_fraction(point, c, max_iterations));
+            row[i] = to_color(div_fraction(point, c, max_iterations));
         }
         pixels[j] = row;
     }
@@ -108,7 +95,7 @@ function mandelbrot_set(width_px, max_iterations) {
         let row = [];
         for (i = 0; i < width_px; i++) {
             point = square[j][i];
-            row[i] = to_color_string(div_fraction(0, point, max_iterations));
+            row[i] = to_color(div_fraction(0, point, max_iterations));
         }
         pixels[j] = row;
     }
@@ -143,52 +130,3 @@ function drawJulia(canvas, real, imaginary) {
         }
     }
 }
-
-
-/*
-let width_px = 20;
-let n = 50;
-let c = math.complex(.5, .5);
-let t = div_time(0, c, n);
-let mandy = mandelbrot_set(width_px, n);
-console.log(t);
-*/
-
-
-
-/*
-function mandelbrotImageData(width_px, max_iterations) {
-    let square = matrix_generator(width_px);
-    let pixels = [];
-    for (j = 0; j < width_px; j++) {
-        for (i = 0; i < width_px; i++) {
-            let point = square[j][i];
-            let color = to_color(div_fraction(point, max_iterations));
-            pixels = pixels.concat(color);
-        }
-    }
-    return pixels;
-}
-
-
-
-function drawMandelbrot_alt(canvas) {
-    var ctx = canvas.getContext("2d");
-    var width_px = canvas.width;
-    let n = 100;
-    let x_c = -0.5;
-    let y_c = 0;
-    let width = 3.2;
-    let k_step = width/(width_px);
-    let x = x_c - width/2;
-    let y = y_c - width/2;
-    let point = math.complex(x, y);
-    for (j = 0; j < width_px; j++) {
-        for (i = 0; i < width_px; i++) {
-            point = math.complex(x+i*k_step, y+j*k_step);
-            ctx.fillStyle = to_color_string(div_fraction(point, n));
-            ctx.fillRect(i, j, 1, 1);
-        }
-    }
-}
-*/

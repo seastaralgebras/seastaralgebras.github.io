@@ -1,20 +1,34 @@
 :root {
-  --page-bg-color: #B0B0C0;
-  --header-bg-color: #202030;
-  --header-text-color: #FFFFFF;
+  
+  --persian-rose: #ff119eff;
+  --fandango: #c0119eff;
+  --mauveine: #80119eff;
+  --zaffre: #40119eff;
+  --zaffre-2: #00119eff;
+  
+  
+  --page-bg-color: #000000;
+  --page-bg-image: url("/assets/images/sunset.jpg");
+  
+  --header-bg-color: rgba(192,192,192,0.6);
+  --header-text-color: #000000;
   --header-border-color: #000000;
-  --ham-color: #FFFFFF;
-  --nav-color: #FFFFFF;
-  --nav-color-hover: #000000;
-  --nav-bg-color: rgba(32,32,48,0.9);
-  --nav-bg-color-hover: rgba(255,255,255,0.9);
-  --text-color: #FFFFFF;
-  --header-active-link-color: #B0C0D0;
-  --current-page-color: #696979;
+  --text-color: #000000;
+  --header-active-link-color: #C0C0C0;
+  --header-color-hover: #FFFFFF;
+  --nav-bg-color-hover: rgba(40,40,40,0.5);
+  --current-page-color: rgba(222,222,222,0.5);
   
-  --content-header-color: var(--header-bg-color);
   
-  --footer-color: var(--header-bg-color);
+  --content-h-color: #000000;
+  --reg-h-bg-color: rgba(192, 192, 192, 0.5);
+  --content-bg-color: rgba(255,255,255,0.7);
+  --content-border-color: #000000;
+  
+  
+  --page-text-color: #000000;
+  
+  --footer-color: #FFFFFF;
   --contact-icon-invert: 100%;
   --contact-icon-brightness: 20%;
   --contact-icon-invert-hover: 100%;
