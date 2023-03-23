@@ -1,6 +1,0 @@
-- name: math.js
-  id: math.js
-  js_src: https://unpkg.com/mathjs@11.7.0/lib/browser/math.js
-- name: mandelbrot.js
-  id: mandelbrot.js
-  js_src: /assets/js/mandelbrot.js

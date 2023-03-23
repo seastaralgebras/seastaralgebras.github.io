@@ -4,11 +4,9 @@
   link: /about.html
 - name: Research
   link: /research.html
-- name: Publications
-  link: /publications.html
 - name: Teaching
   link: /teaching.html
 - name: Projects
   link: /projects.html
-- name: Blog
-  link: /blog.html
+#- name: Blog
+#  link: /blog.html
