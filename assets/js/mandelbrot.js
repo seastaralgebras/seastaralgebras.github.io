@@ -19,7 +19,8 @@ function div_time(z, c, max_n) {
             return i;
         }
     }
-    return max_n;
+    //return max_n;
+    return 0;
 }
 
 function div_fraction(z, c, max_n) {
@@ -53,7 +54,7 @@ function to_color_rgb(t) {
     return "#" + r_hex + g_hex + b_hex;
 }
 
-function to_color_bisexuelle(t) {
+function to_color_hsl(t) {
     let h_1 = 330;
     let h_0 = 210;
     let h = h_0 + math.multiply(t, h_1-h_0);
@@ -63,18 +64,8 @@ function to_color_bisexuelle(t) {
     return color;
 }
 
-to_color_hsl(t) {
-    let h_1 = 110;
-    let h_0 = 210;
-    let h = h_0 + math.multiply(t, h_1-h_0);
-    let s = 100;
-    let l = math.floor(math.multiply(t, 80));
-    let color = "hsl(" + h + ", " + s + "%, " + l + "%)";
-    return color;
-}
-
 function to_color(t) {
-    return to_color_bisexuelle(t);
+    return to_color_hsl(t);
 }
 
 
@@ -155,5 +146,4 @@ function drawJulia(canvas, real, imaginary) {
         }
     }
 }
-
 
