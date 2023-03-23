@@ -11,7 +11,7 @@ function julia_iteration(z, c) {
 }
 
 function div_time(z, c, max_n) {
-    let threshold = 10;
+    let threshold = 3;
     let z_temp = z;
     for (let i = 0; i < max_n; i++) {
         z_temp = julia_iteration(z_temp, c);
@@ -23,7 +23,8 @@ function div_time(z, c, max_n) {
 }
 
 function div_fraction(z, c, max_n) {
-    return 1-math.divide(math.log10(div_time(z, c, max_n)+1), math.log10(max_n));
+    //return 1-math.divide(math.log10(div_time(z, c, max_n)+1), math.log10(max_n));
+    return math.divide(math.log10(div_time(z, c, max_n)+1), math.log10(max_n));
 }
 
 function dec_to_hex(x) {
@@ -42,7 +43,7 @@ function dec_to_hex(x) {
 }
 
 
-function to_color(t) {
+function to_color_rgb(t) {
     let r = math.multiply(t, 255);
     let g = math.multiply(t, 96);
     let b = math.multiply(t, 126);
@@ -52,11 +53,35 @@ function to_color(t) {
     return "#" + r_hex + g_hex + b_hex;
 }
 
+function to_color_bisexuelle(t) {
+    let h_1 = 330;
+    let h_0 = 210;
+    let h = h_0 + math.multiply(t, h_1-h_0);
+    let s = 100;
+    let l = math.floor(math.multiply(t, 80));
+    let color = "hsl(" + h + ", " + s + "%, " + l + "%)";
+    return color;
+}
 
-function matrix_generator(width_px) {
-    let x_c = 0;
-    let y_c = 0;
-    let width = 4.2;
+to_color_hsl(t) {
+    let h_1 = 110;
+    let h_0 = 210;
+    let h = h_0 + math.multiply(t, h_1-h_0);
+    let s = 100;
+    let l = math.floor(math.multiply(t, 80));
+    let color = "hsl(" + h + ", " + s + "%, " + l + "%)";
+    return color;
+}
+
+function to_color(t) {
+    return to_color_bisexuelle(t);
+}
+
+
+function matrix_generator(width_px, x_c, y_c, width) {
+    //let x_c = 0;
+    //let y_c = 0;
+    //let width = 4.2;
     let k_step = width/(width_px);
     let x = x_c - width/2;
     let y = y_c - width/2;
@@ -74,7 +99,7 @@ function matrix_generator(width_px) {
 }
 
 function julia_set(width_px, c, max_iterations) {
-    let square = matrix_generator(width_px);
+    let square = matrix_generator(width_px, 0, 0, 4.2);
     let pixels = [];
     for (j = 0; j < width_px; j++) {
         let row = [];
@@ -89,7 +114,7 @@ function julia_set(width_px, c, max_iterations) {
 
 
 function mandelbrot_set(width_px, max_iterations) {
-    let square = matrix_generator(width_px);
+    let square = matrix_generator(width_px, -0.5, 0, 3.2);
     let pixels = [];
     for (j = 0; j < width_px; j++) {
         let row = [];
@@ -130,3 +155,5 @@ function drawJulia(canvas, real, imaginary) {
         }
     }
 }
+
+

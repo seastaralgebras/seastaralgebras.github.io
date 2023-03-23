@@ -3,7 +3,7 @@ layout: project
 title: Mandelbrot Set
 desc: >
   Generated an image approximating the Mandelbrot set
-link: #"https://github.com/seastaralgebras/mandelbrot"
+link: "https://github.com/seastaralgebras/mandelbrot"
 ---
 ## Python
 
