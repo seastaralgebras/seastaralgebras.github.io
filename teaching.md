@@ -12,9 +12,15 @@ I currently work as a tutor in the Math Help Center at Rutgers, a drop-in tutori
 	{% for course in site.teaching %}
 	<li>
 	{{ course.semester }} {{ course.year}}: 
-	<!--<a href="{{ site.url }}{{ course.url }}.html">-->
+	{% if course.link %}
+	  <a href="{{ site.url }}{{ course.url }}.html">
+	{% endif %}
 	{{ course.course_name }} ({{ course.course_number }})
-	<!--</a>-->
+	{% if course.link %}
+	  </a>
+	{% endif %}
+	<br>
+	Institution: {{ course.institution }}
 	<br>
 	Role: {{ course.position }}
 	</li>

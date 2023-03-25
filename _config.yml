@@ -44,7 +44,7 @@ plugins:
 
 
 scholar:
-  style: modern-language-association
+  style: apa
   sort_by: year, month
   order: descending, descending
   group_by: type

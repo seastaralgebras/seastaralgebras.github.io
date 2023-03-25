@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Fractals are cool, actually (not that anybody was disputing it)."
+title:  "What does the B in Benoit B. Mandelbrot stand for?"
 author: Karuna Sangam
-date:   2023-04-22 12:45:00 -0400
-tags: math fractals coding projects
+date:   2023-05-22 12:45:00 -0400
+tags: math fractals
 categories: math
 ---
 

@@ -10,6 +10,7 @@ semester: Spring
 desc: >
   "Differential calculus of a single variable."
 syllabus: #You can link your syllabus here
+link: false
 ---
 
 TBD

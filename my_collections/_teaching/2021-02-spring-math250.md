@@ -10,6 +10,7 @@ semester: Spring
 desc: >
   "Introduction to linear algebra of finite dimensional real vector spaces."
 syllabus: #You can link your syllabus here
+link: false
 ---
 
 TBD

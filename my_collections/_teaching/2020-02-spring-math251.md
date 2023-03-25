@@ -10,6 +10,7 @@ semester: Spring
 desc: >
   "Differential and integral calculus in two and three variables."
 syllabus: #You can link your syllabus here
+link: false
 ---
 
 TBD
