@@ -4,17 +4,6 @@ layout: default
 <h1>Posts tagged '{{ page.tag }}'</h1>
 {% for post in site.posts %}
 	{% if post.tags contains page.tag %}
-		<article class="post">
-			<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-			<div class="date">Date: {{ post.date | date: "%B %e, %Y" }}</div>
-			<div class="entry">{{ post.excerpt }}</div>
-			<hr>
-			<div class="tags">
-				Tags:&nbsp;
-				{% for post_tag in post.tags %}
-					<a href="/tags/{{post_tag}}">#{{post_tag}}</a>{% if forloop.last %}&nbsp;{% else %},&nbsp;{% endif %}
-				{% endfor %}
-			</div>
-		</article>
+		{% include post-preview.html %}
 	{% endif %}
 {% endfor %}

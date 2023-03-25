@@ -1,0 +1,20 @@
+<article class="post">
+  <h2><a href="{{ post.url }}.html">{{ post.title }}</a></h2>
+	
+	<div class="post-info">
+	  <div class="author">Author:&nbsp;&nbsp;{{ post.author }}</div>
+	  <div class="date">Date:&nbsp;&nbsp;{{ post.date | date: "%B %e, %Y" }}</div>
+	</div>
+	<hr>
+  <div class="entry">
+    <p>{{ post.excerpt }}</p>
+    <p><a href="{{ post.url }}.html">Read more</a></p>
+  </div>
+  <hr>
+  <div class="tags">
+    Tags:&nbsp;
+    {% for post_tag in post.tags %}
+      <a href="/tags/{{post_tag}}">#{{post_tag}}</a>{% if forloop.last %}&nbsp;{% else %},&nbsp;{% endif %}
+    {% endfor %}
+  </div>
+</article>

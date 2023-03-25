@@ -205,8 +205,7 @@ nav li {
 }
 
 
-.post p {
-	text-indent: 0em;
+.page p, #post p, .post p {
 	text-align: left;
 	line-height: 1.8;
 }
@@ -215,16 +214,24 @@ nav li {
 	text-align: left;
 }
 
-
-.entry {
-	
+.post-info {
+  font-family: var(--header-font-family);
 }
 
-
-.date {
-	text-align: left;
+#post .post-info {
+  //display: grid;
+  //grid-template-columns: 1fr 1fr;
 }
 
+#post .author {
+  //text-align: right;
+}
+
+#post .date {
+  //text-align: left;
+}
+
+.entry {}
 
 footer {
 	
