@@ -1,5 +1,6 @@
 ---
 layout: project
+show: false
 title: Mandelbrot Set
 desc: >
   Generated an image approximating the Mandelbrot set
@@ -7,7 +8,7 @@ link: "https://github.com/seastaralgebras/mandelbrot"
 ---
 ## Python
 
-<img src="{{ site.url }}/assets/images/mandelbrot_2000px_1000steps.png" width="50%">
+<img src="{{ site.url }}/assets/images/mandelbrot_2000px_1000steps.png" width="500" max-width="100%">
 
 
 ## Javascript
