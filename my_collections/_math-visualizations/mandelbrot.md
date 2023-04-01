@@ -1,15 +1,20 @@
 ---
 layout: project
-show: false
+show: true
 title: Mandelbrot Set
+image: assets/images/mandelbrot_2000px_1000steps.png
+image-desc: "A black and white image of the Mandelbrot set, where points have been shaded according to how many iterations it takes for them to exceed some threshold. The threshold can be any number greater than 2."
 desc: >
-  Generated an image approximating the Mandelbrot set
+    Generated an image approximating the Mandelbrot set.
 link: "https://github.com/seastaralgebras/mandelbrot"
 ---
+
+Some python and javascript code generating the Mandelbrot set and \\( z^2 + c \\) Julia sets.
+
+
 ## Python
 
-<img src="{{ site.url }}/assets/images/mandelbrot_2000px_1000steps.png" width="500" max-width="100%">
-
+<img src="{{ site.url }}/assets/images/mandelbrot_and_julia.png" width="500" max-width="100%">
 
 ## Javascript
 

@@ -1,14 +1,14 @@
 # Fdb version 3
-["bibtex SangamKarunaCV"] 1679780857 "SangamKarunaCV.aux" "SangamKarunaCV.bbl" "SangamKarunaCV" 1679780905
+["bibtex SangamKarunaCV"] 1679780857 "SangamKarunaCV.aux" "SangamKarunaCV.bbl" "SangamKarunaCV" 1680279239
   "/usr/share/texlive/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "SangamKarunaCV.aux" 1679780904 1911 6f4981a9f06064c29a2eabef6272b038 "pdflatex"
+  "SangamKarunaCV.aux" 1680279239 1911 6f4981a9f06064c29a2eabef6272b038 "pdflatex"
   "publications.bib" 1679779538 977 3b37a382d7b501b936f84a1d93d256f5 ""
   (generated)
   "SangamKarunaCV.bbl"
   "SangamKarunaCV.blg"
-["pdflatex"] 1679780902 "/home/seastaralgebras/Documents/Github/Personal/Website/seastaralgebras.github.io/assets/cv/SangamKarunaCV.tex" "SangamKarunaCV.pdf" "SangamKarunaCV" 1679780905
+["pdflatex"] 1680279238 "/home/seastaralgebras/Documents/Github/Personal/Website/seastaralgebras.github.io/assets/cv/SangamKarunaCV.tex" "SangamKarunaCV.pdf" "SangamKarunaCV" 1680279239
   "/etc/texmf/web2c/texmf.cnf" 1651527291 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/seastaralgebras/Documents/Github/Personal/Website/seastaralgebras.github.io/assets/cv/SangamKarunaCV.tex" 1679780902 20604 e8f2210af4df7c1825479432ac0d9b8c ""
+  "/home/seastaralgebras/Documents/Github/Personal/Website/seastaralgebras.github.io/assets/cv/SangamKarunaCV.tex" 1680279237 20605 1989ca15c6f266dcf10d5bb62135d272 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/fontawesome5/fa5brands0.enc" 1622837620 2920 d63721872b8c77041b88e51b8f7c291d ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/fontawesome5/fa5brands1.enc" 1622837620 2612 19f012b712f5c18ad95793e92d23e578 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc" 1622837620 3042 0e2b14b9be7d01075a4c4591d5d1781b ""
@@ -220,10 +220,10 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1651527611 4379155 98693266ff65f58d9f98aff394de12d2 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1651527641 2798795 3fed9f7ec466f81e0e04ba0971ef1ec0 ""
-  "SangamKarunaCV.aux" 1679780904 1911 6f4981a9f06064c29a2eabef6272b038 "pdflatex"
+  "SangamKarunaCV.aux" 1680279239 1911 6f4981a9f06064c29a2eabef6272b038 "pdflatex"
   "SangamKarunaCV.bbl" 1679780857 421 c8200b82430457491f54a3a466e37784 "bibtex SangamKarunaCV"
-  "SangamKarunaCV.out" 1679780904 1083 0e4732559cb7a201575c8edaa22ccda7 "pdflatex"
-  "SangamKarunaCV.tex" 1679780902 20604 e8f2210af4df7c1825479432ac0d9b8c ""
+  "SangamKarunaCV.out" 1680279239 1083 0e4732559cb7a201575c8edaa22ccda7 "pdflatex"
+  "SangamKarunaCV.tex" 1680279237 20605 1989ca15c6f266dcf10d5bb62135d272 ""
   (generated)
   "SangamKarunaCV.aux"
   "SangamKarunaCV.log"
