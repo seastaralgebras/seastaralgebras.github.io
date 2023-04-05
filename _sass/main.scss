@@ -75,6 +75,11 @@ img {
   max-width: 100%;
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 
 
@@ -317,13 +322,19 @@ footer a {
 // MISC PAGES SETTINGS
 
 canvas {
+  display: block;
   max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 #tiny_form {
   width: 5em;
 }
 .js_container {
-  margin: 1em 0 1em 0;
+  margin: auto 0 auto 0;
+  display: block;
+  max-width: 100%;
+  text-align: center;
 }
 
 

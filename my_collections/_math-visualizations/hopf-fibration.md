@@ -14,8 +14,8 @@ The Hopf fibration is a map \\( f \colon S^3 \to S^2 \\) that is not nullhomotop
 
 ## Animations
 
-<img src="{{ site.url }}/assets/images/hopf_latitudes.gif" width="500px" max-width="100%">
-<img src="{{ site.url }}/assets/images/hopf_longitudes.gif" width="500px" max-width="100%">
-<img src="{{ site.url }}/assets/images/hopf_my_points.gif" width="500px" max-width="100%">
+<img src="{{ site.url }}/assets/images/hopf_latitudes.gif" class="center" width="500px" max-width="100%">
+<img src="{{ site.url }}/assets/images/hopf_longitudes.gif" class="center" width="500px" max-width="100%">
+<img src="{{ site.url }}/assets/images/hopf_my_points.gif" class="center" width="500px" max-width="100%">
 
 

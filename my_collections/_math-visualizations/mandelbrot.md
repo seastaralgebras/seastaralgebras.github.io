@@ -14,7 +14,7 @@ Some python and javascript code generating the Mandelbrot set and \\( z^2 + c \\
 
 ## Python
 
-<img src="{{ site.url }}/assets/images/mandelbrot_and_julia.png" width="500" max-width="100%">
+<img src="{{ site.url }}/assets/images/mandelbrot_and_julia.png" class="center" width="500">
 
 ## Javascript
 
