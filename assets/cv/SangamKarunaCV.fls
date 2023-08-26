@@ -1106,7 +1106,6 @@ INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmsso10.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmss12.tfm
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmss8.tfm
-INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmsso8.tfm
 INPUT ./SangamKarunaCV.bbl
 INPUT SangamKarunaCV.bbl
 INPUT ./SangamKarunaCV.bbl
@@ -1129,4 +1128,3 @@ INPUT /usr/share/texmf/fonts/type1/public/lm/lmss8.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmsso10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmsso17.pfb
-INPUT /usr/share/texmf/fonts/type1/public/lm/lmsso8.pfb
