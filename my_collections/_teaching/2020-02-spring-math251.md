@@ -7,6 +7,7 @@ institution: Rutgers University
 position: "Teaching Assistant"
 year: 2020
 semester: Spring
+current: false
 desc: >
   "Differential and integral calculus in two and three variables."
 syllabus: #You can link your syllabus here

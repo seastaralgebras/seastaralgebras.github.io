@@ -7,6 +7,7 @@ institution: Rutgers University
 position: "Instructor of Record"
 year: 2020
 semester: Summer
+current: false
 desc: >
   "Differential and integral calculus in two and three variables."
 syllabus: #You can link your syllabus here

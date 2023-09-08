@@ -7,6 +7,7 @@ institution: Rutgers University
 position: "Teaching Assistant"
 year: 2022
 semester: Spring
+current: false
 desc: >
   "Differential calculus of a single variable."
 syllabus: #You can link your syllabus here
