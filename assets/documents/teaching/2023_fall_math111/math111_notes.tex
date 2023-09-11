@@ -1,5 +1,7 @@
-\documentclass[boxes,sansserif]{seastaralgebras_expository}
+\documentclass[boxes,serif]{seastaralgebras_expository}
 \usepackage{seastaralgebras}
+
+\renewcommand{\sth}{\mid}
 
 \title{Precalculus Part I}
 \shorttitle{MATH 111}
@@ -16,13 +18,107 @@
 
 \section{Fundamentals}
 
+% This is a test.
+
 \subsection{The Real Numbers}
 
-TBD
+One of the foundational concepts you will be working with in this course is that of the real numbers. You've most likely worked with them in some form or another, and may be familiar with many aspects. In mathematics, the actual foundational work to build the real numbers is extremely complicated! We won't be learning the details of it, but we can take a glance at the basic ideas here.
 
-\begin{defn}
-This is a definition.
+\begin{note}
+    If you see an expression that looks like $\set{ \text{$n$ is natural} \sth \text{$n$ is even} }$, we are talking about a set containing $2, 4, 6, 8, \dots$ as elements; that is, all positive even numbers are elements of this set. This is called set notation. We will typically see sets of the form $\set{n \sth \text{some condition that $n$ satisfies}}$.
+\end{note}
+
+To begin with, we'll first discuss the natural numbers. You may have heard of them referred to as counting numbers.
+
+\begin{defn} \label{def:natural}
+    The \emph{natural numbers}, denoted $\bbn$, are the set $\set{1, 2, 3, \dots }$. An important property of the natural numbers is that if $n$ is a natural number, then $n+1$ is a natural number, and $1$ is the smallest natural number.
 \end{defn}
+
+We can think of constructing the natural numbers like this: we can start with $1$, and we can add $1$ to it as many times as we'd like. We should be able to get every one of the counting numbers this way. Using this, we can come up with the concept of addition.
+
+\begin{defn} \label{def:addition}
+    If $m$ and $n$ are natural numbers, then $m + n = (\overbrace{1+1+\dots+1}^m) + (\overbrace{1+1+\dots+1}^n)$.
+\end{defn}
+
+Before we can go further, we want to consider another concept: that is, the concept of zero. The Indian mathematician Brahmagupta (6th-7th century C.E.) is often credited to have been the first person to formally write down the rules of arithmetic as they related to the number zero, but it appeared in many forms throughout cultures prior to that, from China to West Asia to the pre-Columbian Americas.
+
+\begin{defn} \label{def:zero}
+    The number $0$ is called the \emph{additive identity}. It is the number with the property such that $0+n = n+0 = n$ for any number $n$.
+\end{defn}
+
+\begin{note}
+    Many people consider $0$ to be the smallest natural number, but your textbook does not. It is common in computer science, for example, to start counting at $0$.
+\end{note}
+
+How do we get from the number $2$ to the number $5$? We can add $1$ three times; or in other words, $2+3=5$. What about reversing this process? For that, we'll need negative numbers. Enter: the integers.
+
+\begin{defn}\label{def:integers}
+    The \emph{integers}, denoted $\bbz$, are the set $\set{\dots, -3, -2, -1, 0, 1, 2, 3, \dots}$. If $n$ is a natural number, then $-n$ is a number such that $n + (-n) = 0$. The number $-n$ is called the \emph{additive inverse} of $n$.
+\end{defn}
+
+What if we wanted to repeatedly add the same number? We want to define the notion of multiplication to make this simpler.
+
+\begin{defn} \label{def:multiplication}
+    If $m$ and $n$ are positive integers, then $m\cdot n = \overbrace{m+m+\dots+m}^n$.
+\end{defn}
+
+We say that addition and multiplication are operations on the real numbers. Here are some basic properties of real numbers and these two operations.
+
+\begin{proper}[Properties of real numbers] \label{proper:basic}
+    If $a,b,c$ are all (rea) numbers, then the following are true:
+    \begin{enumerate}
+        \item $a+b = b+a$ and $ab = ba$ (commutative property);
+        \item $(a+b) + c = a + (b+c)$ and $(ab)c=a(bc)$ (associative property);
+        \item $a(b+c) = ab + ac$ and $(a+b)c = ac + bc$ (distributive property).
+    \end{enumerate}
+\end{proper}
+
+These three properties will come up over and over throughout this course.
+
+\begin{proper}[Properties of negative numbers] \label{proper:negative}
+    If $a$ is a number, then
+    \begin{enumerate}
+        \item $(-1)a=-a$;
+        \item $-(-a)=a$;
+        \item $(-a)b = a(-b)=-(ab)$;
+        \item $(-a)(-b)=ab$;
+        \item $-(a+b) = -a-b$;
+        \item $-(a-b) = b-a$.
+    \end{enumerate}
+\end{proper}
+
+Just like subtraction is the inverse of addition, division is the inverse of multiplication.
+
+\begin{defn} \label{def:one}
+    The number $1$ is referred to as the \emph{multiplicative identity}; that is, if $a$ is a number, then $a\cdot 1 = 1 \cdot a = a$.
+\end{defn}
+
+\begin{defn} \label{def:rational}
+    The rational numbers, denoted $\bbq$, are the set $\set{\frac{a}{b} \sth \text{$a,b$ are integers, $b\neq0$}}$. The numbers $\frac{a}{b}$ are equal to $a \cdot \frac{1}{b}$, where $\frac{1}{b}$ is the \emph{multiplicative inverse} of $b$. That is, $b \cdot \frac{1}{b} = \frac{1}{b} \cdot b = 1$.
+\end{defn}
+
+There are a number of important properties of multiplication and division that we want to lay out before we go further.
+
+\begin{proper} \label{proper:division}
+    If $a,b,c,d$ are all (real) numbers, then the following are true:
+    \begin{itemize}
+        \item $\frac{a}{b} \cdot \frac{c}{d} = \frac{ac}{bc}$;
+        \item $\frac{a}{b} \div \frac{c}{d} = \frac{ad}{bc}$;
+        \item $\frac{a}{c}+\frac{b}{c} = \frac{a+b}{c}$;
+        \item $\frac{a}{b}+\frac{c}{d} = \frac{ad+bc}{bd}$;
+        \item $\frac{ac}{bc}=\frac{a}{b}$;
+        \item if $\frac{a}{b}=\frac{c}{d}$, then $ad=bc$.
+    \end{itemize}
+\end{proper}
+
+
+
+
+% \section*{Appendix}
+% \begin{proof}[Proof of Properties~\ref{proper:division}]
+%     TBD
+% \end{proof}
+
 
 % \begin{thm}
 %     This is a theorem.
@@ -36,7 +132,7 @@ This is a definition.
 % \end{example}
 
 
-\subsection{Exponents and Radicals}
+% \subsection{Exponents and Radicals}
 
 % \begin{defn}
 % This is a definition.
@@ -52,5 +148,7 @@ This is a definition.
 % \begin{example}
 %     This is an example.
 % \end{example}
+
+
 
 \end{document}
