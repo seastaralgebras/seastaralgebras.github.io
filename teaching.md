@@ -12,14 +12,15 @@ Currently, I am a Math Instructor at AoPS Academy Princeton, and a Part-Time Lec
   {% for course in site.teaching %}
   {% if course.current %}
 	<li>
-	{{ course.semester }} {{ course.year}}: 
 	{% if course.link %}
 	  <a href="{{ site.url }}{{ course.url }}.html">
 	{% endif %}
-	{{ course.course_name }} ({{ course.course_number }})
+	<b>{{ course.course_name }} ({{ course.course_number }})</b>
 	{% if course.link %}
 	  </a>
 	{% endif %}
+	<br>
+	Term: {{ course.semester }} {{ course.year}}: 
 	<br>
 	Institution: {{ course.institution }}
 	<br>
@@ -34,14 +35,15 @@ Currently, I am a Math Instructor at AoPS Academy Princeton, and a Part-Time Lec
 	{% for course in site.teaching reversed %}
 	{% unless course.current %}
 	<li>
-	{{ course.semester }} {{ course.year}}: 
 	{% if course.link %}
 	  <a href="{{ site.url }}{{ course.url }}.html">
 	{% endif %}
-	{{ course.course_name }} ({{ course.course_number }})
+	<b>{{ course.course_name }} ({{ course.course_number }})</b>
 	{% if course.link %}
 	  </a>
 	{% endif %}
+	<br>
+	Term: {{ course.semester }} {{ course.year}}: 
 	<br>
 	Institution: {{ course.institution }}
 	<br>

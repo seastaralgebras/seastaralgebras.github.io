@@ -5,7 +5,7 @@ permalink: /research.html
 ---
 ## Current research:
 
-Recently, I have been thinking about knot theory, 3- and 4-manifolds, and Heegard Floer homology.
+Recently, I have been thinking about knot theory, 3- and 4-manifolds, and Heegaard Floer homology.
 
 
 ## Previous research:
