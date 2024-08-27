@@ -7,7 +7,7 @@ institution: Rutgers University
 position: "Teaching Assistant"
 year: 2024
 semester: Spring
-current: true
+current: false
 desc: >
   "Differential and integral calculus in two and three variables."
 syllabus: #You can link your syllabus here
