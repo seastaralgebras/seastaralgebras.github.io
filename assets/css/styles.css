@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Hind:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Ultra&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alice&family=Sacramento&display=swap");
+:root {
+  --persian-rose: #ff119eff;
+  --fandango: #c0119eff;
+  --mauveine: #80119eff;
+  --zaffre: #40119eff;
+  --zaffre-2: #00119eff;
+  --page-bg-color: #000000;
+  --page-bg-image: url("/assets/images/sunset.jpg");
+  --header-bg-color: rgba(192,192,192,0.6);
+  --header-text-color: #000000;
+  --header-border-color: #000000;
+  --text-color: #000000;
+  --header-active-link-color: #C0C0C0;
+  --header-color-hover: #FFFFFF;
+  --nav-bg-color-hover: rgba(40,40,40,0.5);
+  --current-page-color: rgba(222,222,222,0.5);
+  --content-h-color: #000000;
+  --reg-h-bg-color: rgba(192, 192, 192, 0.5);
+  --content-bg-color: rgba(255,255,255,0.7);
+  --content-border-color: #000000;
+  --page-text-color: #000000;
+  --footer-color: #FFFFFF;
+  --contact-icon-invert: 100%;
+  --contact-icon-brightness: 20%;
+  --contact-icon-invert-hover: 100%;
+  --contact-icon-brightness-hover: 100%;
+}
+
+:root {
+  --header-font-style: normal;
+  --header-font-weight: normal;
+  --header-font-family: "Montserrat", sans-serif;
+  --nav-font-style: normal;
+  --nav-font-weight: normal;
+  --body-font-family: "Hind", sans-serif;
+}
+
+/**
+:root {
+  --header-font-family: 'Sacramento', cursive;
+  --body-font-family: 'Alice', serif;
+}
+**/
+/**
+:root {
+  --header-font-family: 'Ultra', serif;
+  --body-font-family: 'Roboto Mono', monospace;
+}
+**/
+/**
+:root {
+  --header-font-family: 'Quicksand', sans-serif;
+  --body-font-family: 'Quicksand', sans-serif;
+}
+**/
+/**
+:root {
+  --header-font-family: 'Montserrat', sans-serif;
+  --body-font-family: 'Hind', sans-serif;
+}
+**/
+/**
+:root {
+  --header-font-family: 'Playfair Display', serif;
+  --body-font-family: 'Lato', sans-serif;
+}
+**/
+html {
+  background: linear-gradient(180deg, hsla(324, 100%, 53%, 0.7) 0%, hsla(234, 100%, 31%, 0.7) 100%);
+  font-family: var(--body-font-family);
+  background-color: #303030;
+  background: var(--page-bg-image) no-repeat fixed;
+  background-size: cover;
+}
+
+body {
+  margin: 0;
+  color: var(--text-color);
+}
+
+h1 {
+  text-align: center;
+  font-size: calc(2em + 1vw);
+}
+
+h2 {
+  font-size: calc(1.6em + 1vw);
+}
+
+h2 {
+  font-size: calc(1.2em + 1vw);
+}
+
+h1, h2, h3 {
+  font-family: var(--header-font-family);
+  font-weight: var(--header-font-weight);
+  font-style: var(--header-font-style);
+}
+
+h1 a:visited, a:visited h1 {
+  color: inherit;
+}
+
+h1 a:hover, a:hover h1 {
+  color: var(--header-color-hover);
+}
+
+h1 a:active, a:active h1 {
+  color: var(--header-active-link-color);
+}
+
+img {
+  max-width: 100%;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  background-color: var(--header-bg-color);
+  color: var(--header-text-color);
+  text-align: center;
+  margin: 0;
+  border-top: 2px solid var(--header-border-color);
+  border-bottom: 2px solid var(--header-border-color);
+  padding: 1em 0 1em 0;
+  width: 100%;
+}
+
+header li {
+  list-style: none;
+}
+
+header a {
+  text-decoration: none;
+  color: var(--header-text-color);
+}
+
+header a:visited {
+  text-decoration: none;
+}
+
+header a:hover {
+  text-decoration: none;
+  color: var(--header-color-hover);
+}
+
+header a:active {
+  text-decoration: none;
+  color: var(--header-active-link-color);
+}
+
+nav {
+  font-weight: var(--nav-font-weight);
+  font-size: calc(1em + 1vw);
+  font-family: var(--header-font-family);
+  font-style: var(--nav-font-style);
+  line-height: 2em;
+}
+
+nav ul {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0 0 0 -2em;
+}
+
+nav li {
+  margin: 0;
+}
+
+.nav-item {
+  display: inline-block;
+}
+
+.nav-item a {
+  display: inline;
+  text-decoration: none;
+  color: var(--header-text-color);
+  padding: 0.25em 0.5em 0.25em 0.5em;
+}
+
+.nav-item a:hover {
+  background-color: var(--nav-bg-color-hover);
+  color: var(--header-color-hover);
+}
+
+.nav-item a:active {
+  text-decoration: none;
+  color: var(--header-active-link-color);
+}
+
+.nav-item a.current {
+  background-color: var(--current-page-color);
+}
+
+.content {
+  margin: 0;
+}
+
+.footer {
+  clear: both;
+  text-align: center;
+}
+
+.content h1 {
+  color: var(--content-h-color);
+  text-align: center;
+  background-color: var(--reg-h-bg-color);
+  border-top: 2px solid var(--content-border-color);
+  border-bottom: 2px solid var(--content-border-color);
+}
+
+.page, #post, .post {
+  background-color: var(--content-bg-color);
+  color: var(--page-text-color);
+  border: 2px solid var(--content-border-color);
+  margin: 2em;
+  padding: 1em;
+}
+
+.page p, #post p, .post p {
+  text-align: left;
+  line-height: 1.8;
+}
+
+.post h2 {
+  text-align: left;
+}
+
+.post-info {
+  font-family: var(--header-font-family);
+}
+
+footer {
+  clear: both;
+  text-align: center;
+  margin: 25px;
+  color: var(--footer-color);
+  padding: 0;
+}
+
+footer a {
+  color: inherit;
+}
+
+.contact {
+  padding: 0.5em 0.5em 0.5em 0.5em;
+}
+
+.contact ul {
+  list-style-type: none;
+  margin: 0 0 0 -2em;
+}
+
+.contact li {
+  display: inline;
+  margin: 1em;
+}
+
+.contact img {
+  width: 3em;
+  filter: invert(100%) brightness(100%);
+}
+
+.contact img:hover {
+  filter: invert(100%) brightness(50%);
+}
+
+.notfound {
+  margin: 10px auto;
+  max-width: 600px;
+  text-align: center;
+}
+
+.notfound h1 {
+  margin: 30px 0;
+  font-size: 4em;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+/**
+// RESPONSIVITY
+@media screen and (min-width: 720px) {
+
+  .container {
+    display: flex;
+  }
+
+  .header-small {
+    display: none;
+  }
+
+  .header-large {
+    display: inline-block;
+    flex: 1;
+  }
+
+  .content {
+    flex: 3;
+  }
+
+}
+**/
+canvas {
+  display: block;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#tiny_form {
+  width: 5em;
+}
+
+.js_container {
+  margin: auto 0 auto 0;
+  display: block;
+  max-width: 100%;
+  text-align: center;
+}
+
+/*# sourceMappingURL=styles.css.map */
