@@ -4,7 +4,7 @@ title: Teaching
 permalink: /teaching.html
 ---
 
-Currently, I am a Math Instructor at AoPS Academy Princeton, and a Part-Time Lecturer at Rutgers University -- New Brunswick.
+Currently, I am a Lecturer at Rutgers University--New Brunswick and a Math Instructor at AoPS Academy Princeton.
 
 ## Current Teaching
 
