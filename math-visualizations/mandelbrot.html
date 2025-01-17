@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>Mandelbrot Set | Karuna Sangam</title>
+		<link rel="stylesheet" href="/assets/css/styles.css">
+		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+		<script id="MathJax-script" async
+			src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+		</script>
+	</head>
+	<body>
+    <header class="header">
+  <div class="header-container">
+  <h1>
+    <a href="/" class="home-link">
+      Karuna Sangam
+    </a>
+  </h1>
+  </div>
+  <div class="header-container">
+  <nav>
+  <ul class="nav-menu">
+    
+      <li class="nav-item">
+        <a href="/" >
+          Home
+        </a>
+      </li>
+    
+      <li class="nav-item">
+        <a href="/about.html" >
+          About
+        </a>
+      </li>
+    
+      <li class="nav-item">
+        <a href="/research.html" >
+          Research
+        </a>
+      </li>
+    
+      <li class="nav-item">
+        <a href="/teaching.html" >
+          Teaching
+        </a>
+      </li>
+    
+      <li class="nav-item">
+        <a href="/cv.html" >
+          CV
+        </a>
+      </li>
+    
+      <li class="nav-item">
+        <a href="/projects.html" >
+          Projects
+        </a>
+      </li>
+    
+  </ul>
+</nav>
+
+  </div>
+</header>
+
+    <div class="content">
+      <h1><a href="https://github.com/seastaralgebras/mandelbrot">Mandelbrot Set</a></h1>
+<article class="page">
+	<div class="entry">
+		<p>Some python and javascript code generating the Mandelbrot set and \( z^2 + c \) Julia sets.</p>
+
+<h2 id="python">Python</h2>
+
+<p><img src="/assets/images/mandelbrot_and_julia.png" class="center" width="500" /></p>
+
+<h2 id="javascript">Javascript</h2>
+
+<script>
+    var mathjs_script = document.createElement('script');
+    mathjs_script.type = 'text/javascript';
+    mathjs_script.src = 'https://unpkg.com/mathjs@11.7.0/lib/browser/math.js'
+    var mandy_script = document.createElement('script');
+    mandy_script.type = 'text/javascript';
+    mandy_script.src = '/assets/js/mandelbrot.js';
+    document.head.appendChild(mathjs_script);
+    document.head.appendChild(mandy_script);
+</script>
+
+<div class="js_container">
+<p>The following is a Javascript program that will generate a Mandelbrot set when you press the button labeled "Draw Mandelbrot set!"</p>
+
+<canvas id="mandelbrot" width="500" height="500" stype="border:1px solid #000000;"></canvas>
+<br />
+<button onclick="drawMandelbrot(mandelbrot_pic)">Draw Mandelbrot set!</button>
+</div>
+
+<div class="js_container">
+<p>The following is a Javascript program that will generate a Julia set with c given by the specified real and imaginary parts when you press the button labeled "Draw Julia set!"</p>
+
+<canvas id="julia" width="500" height="500" stype="border:1px solid #000000;"></canvas>
+
+<form id="julia_point">
+    Real: <input id="tiny_form" type="number" name="real_c" value="0.0" step="0.001" min="-2.1" max="2.1" />
+    <br />
+    Imaginary: <input id="tiny_form" type="number" name="imag_c" value="0.0" step="0.001" min="-2.1" max="2.1" />
+</form> 
+<button onclick="julia_start()">Draw Julia set!</button>
+</div>
+
+<script>
+    var mandelbrot_pic = document.getElementById("mandelbrot");
+    var julia_pic = document.getElementById("julia");
+
+    function julia_start() {
+      var z = document.getElementById("julia_point");
+      var x;
+      var y;
+      x = z.real_c.value;
+      y = z.imag_c.value;
+      drawJulia(julia_pic, x, y);
+    }
+    
+</script>
+
+
+	</div>
+</article>
+
+    </div>
+    <footer class="footer">
+  <div class="contact">
+    <ul>
+      <li><a href="mailto:kss159@math.rutgers.edu"><img src="/assets/icons/at-solid.svg" alt="Email" class="contact-icon"></a></li>
+      <li><a href="https://github.com/seastaralgebras"><img src="/assets/icons/github.svg" alt="Github" class="contact-icon"></a></li>
+      <li><a href="https://linkedin.com/in/karuna-sangam-b1137498/"><img src="/assets/icons/linkedin.svg" alt="LinkedIn" class="contact-icon"></a></li>
+      <!--
+      <li><a href="https://stackoverflow.com/users/"><img src="/assets/icons/stack-overflow.svg" alt="Stack Overflow" class="contact-icon"></a></li>
+      <li><a href="https://twitter.com/"><img src="/assets/icons/twitter.svg" alt="Twitter" class="contact-icon"></a></li>
+      <li><a href="https://facebook.com/"><img src="/assets/icons/facebook.svg" alt="Facebook" class="contact-icon"></a></li>
+      <li><a href="https://youtube.com/"><img src="/assets/icons/youtube.svg" alt="Youtube" class="contact-icon"></a></li>
+      <li><a href="https://discordapp.com/users/"><img src="/assets/icons/discord.svg" alt="Discord" class="contact-icon"></a></li>
+      -->
+    </ul>
+  </div>
+	<!--<i>Website made by <a href="https://karunasangam.com">Karuna Sangam</a></i>-->
+</footer>
+
+	</body>
+</html>
